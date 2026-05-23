@@ -267,10 +267,10 @@
   },
   "primaryTokenAttribute": "attributes.pv",
   "secondaryTokenAttribute": "attributes.pm",
-  "url": "https://github.com/SEU_USUARIO/Tormenta20",
-  "manifest": "https://raw.githubusercontent.com/SEU_USUARIO/Tormenta20/master/system.json",
-  "download": "https://github.com/SEU_USUARIO/Tormenta20/releases/latest/download/tormenta20.zip",
-  "changelog": "https://github.com/SEU_USUARIO/Tormenta20/releases",
-  "license": "https://github.com/SEU_USUARIO/Tormenta20/blob/master/LICENSE",
-  "bugs": "https://github.com/SEU_USUARIO/Tormenta20/issues"
+  "url": "https://github.com/ins-ramon/t20-fvtt",
+  "manifest": "https://raw.githubusercontent.com/ins-ramon/t20-fvtt/main/system.json",
+  "download": "https://github.com/ins-ramon/t20-fvtt/releases/latest/download/tormenta20.zip",
+  "changelog": "https://github.com/ins-ramon/t20-fvtt/releases",
+  "license": "https://github.com/ins-ramon/t20-fvtt/blob/master/LICENSE",
+  "bugs": "https://github.com/ins-ramon/t20-fvtt/issues"
 }
