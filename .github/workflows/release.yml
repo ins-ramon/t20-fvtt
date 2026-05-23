@@ -33,7 +33,6 @@ jobs:
           gh release delete latest --cleanup-tag -y 2>/dev/null || true
           gh release create latest tormenta20.zip \
             --title "Build de teste (v14)" \
-            --notes "Build automático do branch master. Instale via manifest URL." \
-            --prerelease
+            --notes "Build automático do branch main. Instale via manifest URL."
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -269,7 +269,7 @@
   "secondaryTokenAttribute": "attributes.pm",
   "url": "https://github.com/ins-ramon/t20-fvtt",
   "manifest": "https://raw.githubusercontent.com/ins-ramon/t20-fvtt/main/system.json",
-  "download": "https://github.com/ins-ramon/t20-fvtt/releases/latest/download/tormenta20.zip",
+  "download": "https://github.com/ins-ramon/t20-fvtt/releases/download/latest/tormenta20.zip",
   "changelog": "https://github.com/ins-ramon/t20-fvtt/releases",
   "license": "https://github.com/ins-ramon/t20-fvtt/blob/master/LICENSE",
   "bugs": "https://github.com/ins-ramon/t20-fvtt/issues"
