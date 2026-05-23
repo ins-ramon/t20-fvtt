@@ -1,0 +1,39 @@
+name: Build & Release
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Build (packs + rollup)
+        run: npm run build:ci
+
+      - name: Criar ZIP do sistema
+        run: cd dist && zip -r ../tormenta20.zip .
+
+      - name: Publicar release "latest"
+        run: |
+          gh release delete latest --cleanup-tag -y 2>/dev/null || true
+          gh release create latest tormenta20.zip \
+            --title "Build de teste (v14)" \
+            --notes "Build automático do branch master. Instale via manifest URL." \
+            --prerelease
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
