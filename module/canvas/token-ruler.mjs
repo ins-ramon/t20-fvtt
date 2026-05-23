@@ -34,10 +34,10 @@ export default class TokenRulerT20 extends foundry.canvas.placeables.tokens.Toke
 
 	static applyMovementConfig() {
 		const sourceActions = CONFIG.Token.movement.actions;
+		delete CONFIG.Token.movement.actions.crawl;
 		foundry.utils.mergeObject(
 			CONFIG.Token.movement.actions,
 			{
-				"-=crawl": null,
 				blink: {
 					label: "T20.MovementTeleport"
 				},
@@ -81,7 +81,7 @@ export default class TokenRulerT20 extends foundry.canvas.placeables.tokens.Toke
 					label: "T20.MovementWalk"
 				}
 			},
-			{ performDeletions: true }
+			{ applyOperators: true }
 		);
 	}
 }
