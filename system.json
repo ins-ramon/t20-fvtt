@@ -1,5 +1,5 @@
 {
-  "id": "t20-ramon",
+  "id": "tormenta20",
   "title": "T20 Ramon",
   "description": "Sistema NÃO OFICIAL de Tormenta20 para FoundryVTT!",
   "version": "1.5.015",
@@ -75,56 +75,56 @@
     {
       "name": "racas",
       "label": "Raças",
-      "system": "t20-ramon",
+      "system": "tormenta20",
       "path": "./packs/racas",
       "type": "Item"
     },
     {
       "name": "classes",
       "label": "Classes",
-      "system": "t20-ramon",
+      "system": "tormenta20",
       "path": "./packs/classes",
       "type": "Item"
     },
     {
       "name": "poderes",
       "label": "Poderes",
-      "system": "t20-ramon",
+      "system": "tormenta20",
       "path": "./packs/poderes",
       "type": "Item"
     },
     {
       "name": "poderes-distincao",
       "label": "Poderes de Distinção",
-      "system": "t20-ramon",
+      "system": "tormenta20",
       "path": "./packs/poderes-distincao",
       "type": "Item"
     },
     {
       "name": "equipamentos",
       "label": "Equipamentos",
-      "system": "t20-ramon",
+      "system": "tormenta20",
       "path": "./packs/equipamentos",
       "type": "Item"
     },
     {
       "name": "equipamentos-magicos",
       "label": "Itens Mágicos",
-      "system": "t20-ramon",
+      "system": "tormenta20",
       "path": "./packs/equipamentos-magicos",
       "type": "Item"
     },
     {
       "name": "magias",
       "label": "Magias",
-      "system": "t20-ramon",
+      "system": "tormenta20",
       "path": "./packs/magias",
       "type": "Item"
     },
     {
       "name": "habilidades-de-criaturas",
       "label": "Habilidades de Criaturas",
-      "system": "t20-ramon",
+      "system": "tormenta20",
       "path": "./packs/habilidades-de-criaturas",
       "type": "Item",
       "ownership": {
@@ -135,21 +135,21 @@
     {
       "name": "pocoes",
       "label": "Poções",
-      "system": "t20-ramon",
+      "system": "tormenta20",
       "path": "./packs/pocoes",
       "type": "Item"
     },
     {
       "name": "parceiros",
       "label": "Parceiros",
-      "system": "t20-ramon",
+      "system": "tormenta20",
       "path": "./packs/parceiros",
       "type": "Item"
     },
     {
       "name": "ameacas",
       "label": "Ameaças",
-      "system": "t20-ramon",
+      "system": "tormenta20",
       "path": "./packs/ameacas",
       "type": "Actor",
       "ownership": {
@@ -160,7 +160,7 @@
     {
       "name": "convocacoes",
       "label": "Convocações",
-      "system": "t20-ramon",
+      "system": "tormenta20",
       "path": "./packs/convocacoes",
       "type": "Actor",
       "ownership": {
@@ -171,21 +171,21 @@
     {
       "name": "basico",
       "label": "Livro Básico",
-      "system": "t20-ramon",
+      "system": "tormenta20",
       "path": "./packs/basico",
       "type": "JournalEntry"
     },
     {
       "name": "tabelas-de-tesouro",
       "label": "Tabelas de Tesouro",
-      "system": "t20-ramon",
+      "system": "tormenta20",
       "path": "./packs/tabelas-de-tesouro",
       "type": "RollTable"
     },
     {
       "name": "macros",
       "label": "Macros",
-      "system": "t20-ramon",
+      "system": "tormenta20",
       "path": "./packs/macros",
       "type": "Macro"
     }

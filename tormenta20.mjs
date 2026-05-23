@@ -180,46 +180,46 @@ Hooks.once("init", async function () {
 
 	// Register sheet application classes
 	foundry.documents.collections.Actors.unregisterSheet("core", foundry.appv1.sheets.ActorSheet);
-	foundry.documents.collections.Actors.registerSheet("t20-ramon", ActorSheetT20Bases, {
+	foundry.documents.collections.Actors.registerSheet("tormenta20", ActorSheetT20Bases, {
 		types: ["bases"],
 		makeDefault: true,
 		label: "T20.BasesSheet" // "Ficha de Bases"
 	});
-	foundry.documents.collections.Actors.registerSheet("t20-ramon", ActorSheetT20Character, {
+	foundry.documents.collections.Actors.registerSheet("tormenta20", ActorSheetT20Character, {
 		types: ["character"],
 		makeDefault: true,
 		label: "T20.CharacterSheet" // "Ficha de Personagem"
 	});
-	foundry.documents.collections.Actors.registerSheet("t20-ramon", ActorSheetT20CharacterTabbed, {
+	foundry.documents.collections.Actors.registerSheet("tormenta20", ActorSheetT20CharacterTabbed, {
 		types: ["character"],
 		makeDefault: false,
 		label: "T20.CharacterSheetTabbed" // "Ficha de Personagem - Abas"
 	});
-	foundry.documents.collections.Actors.registerSheet("t20-ramon", ActorSheetT20NPC, {
+	foundry.documents.collections.Actors.registerSheet("tormenta20", ActorSheetT20NPC, {
 		types: ["npc"],
 		makeDefault: true,
 		label: "T20.NPCSheet"
 	});
 
-	foundry.documents.collections.Actors.registerSheet("t20-ramon", ActorSheetT20Simple, {
+	foundry.documents.collections.Actors.registerSheet("tormenta20", ActorSheetT20Simple, {
 		types: ["simple"],
 		makeDefault: true,
 		label: "T20.SimpleActorSheet" // "Ficha de Simple"
 	});
 
-	foundry.documents.collections.Actors.registerSheet("t20-ramon", HazardSheetT20, {
+	foundry.documents.collections.Actors.registerSheet("tormenta20", HazardSheetT20, {
 		types: ["hazard"],
 		makeDefault: true,
 		label: "T20.HazardSheet" // "Ficha de Perigos Complexos"
 	});
 
 	foundry.documents.collections.Items.unregisterSheet("core", foundry.appv1.sheets.ItemSheet);
-	foundry.documents.collections.Items.registerSheet("t20-ramon", ItemSheetT20, {
+	foundry.documents.collections.Items.registerSheet("tormenta20", ItemSheetT20, {
 		makeDefault: true,
 		label: "T20.ItemSheet"
 	});
-	foundry.documents.collections.Items.unregisterSheet("t20-ramon", ItemSheetT20, { types: ["race"] });
-	foundry.documents.collections.Items.registerSheet("t20-ramon", RaceSheetT20, {
+	foundry.documents.collections.Items.unregisterSheet("tormenta20", ItemSheetT20, { types: ["race"] });
+	foundry.documents.collections.Items.registerSheet("tormenta20", RaceSheetT20, {
 		makeDefault: true,
 		types: ["race"],
 		label: "T20.ItemSheet"
@@ -230,7 +230,7 @@ Hooks.once("init", async function () {
 		"core",
 		foundry.applications.sheets.ActiveEffectConfig
 	);
-	foundry.applications.apps.DocumentSheetConfig.registerSheet(ActiveEffect, "t20-ramon", ActiveEffectConfigT20, {
+	foundry.applications.apps.DocumentSheetConfig.registerSheet(ActiveEffect, "tormenta20", ActiveEffectConfigT20, {
 		makeDefault: true,
 		label: "T20.ActiveEffectSheet"
 	});
