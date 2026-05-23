@@ -136,10 +136,10 @@ export default class ActiveEffectWizard extends HandlebarsApplicationMixin(Appli
 			currMovement: this.currMovement,
 			currResistance: this.currResistance,
 			changeModes: {
-				[foundry.CONST.ACTIVE_EFFECT_MODES.ADD]: "EFFECT.MODE_ADD",
-				[foundry.CONST.ACTIVE_EFFECT_MODES.MULTIPLY]: "EFFECT.MODE_MULTIPLY",
-				[foundry.CONST.ACTIVE_EFFECT_MODES.OVERRIDE]: "EFFECT.MODE_OVERRIDE",
-				[foundry.CONST.ACTIVE_EFFECT_MODES.UPGRADE]: "EFFECT.MODE_UPGRADE"
+				[foundry.CONST.ACTIVE_EFFECT_MODES?.ADD ?? 2]: "EFFECT.MODE_ADD",
+				[foundry.CONST.ACTIVE_EFFECT_MODES?.MULTIPLY ?? 1]: "EFFECT.MODE_MULTIPLY",
+				[foundry.CONST.ACTIVE_EFFECT_MODES?.OVERRIDE ?? 4]: "EFFECT.MODE_OVERRIDE",
+				[foundry.CONST.ACTIVE_EFFECT_MODES?.UPGRADE ?? 5]: "EFFECT.MODE_UPGRADE"
 			},
 			buttons: [
 				{
@@ -438,10 +438,11 @@ export default class ActiveEffectWizard extends HandlebarsApplicationMixin(Appli
 	}
 
 	#prepareChanges() {
+		const modeToType = ["custom", "multiply", "add", "downgrade", "override", "upgrade"];
 		this.#effect.changes = this.#changes.map((c) => {
 			return {
 				key: c.key,
-				mode: c.mode,
+				type: modeToType[c.mode] ?? "add",
 				value: c.value
 			};
 		});
@@ -505,7 +506,7 @@ export default class ActiveEffectWizard extends HandlebarsApplicationMixin(Appli
 		this.#changes?.push({
 			label: label,
 			key: key,
-			mode: foundry.CONST.ACTIVE_EFFECT_MODES.ADD,
+			mode: foundry.CONST.ACTIVE_EFFECT_MODES?.ADD ?? 2,
 			boolean,
 			choices,
 			field

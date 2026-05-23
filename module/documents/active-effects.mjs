@@ -9,6 +9,13 @@ export default class ActiveEffectT20 extends ActiveEffect {
 	/** @inheritdoc */
 	static migrateData(data) {
 		super.migrateData(data);
+		// v14 Active Effects V2: migrar mode numérico → type string para dados salvos em v13
+		const modeMap = { 0: "custom", 1: "multiply", 2: "add", 3: "downgrade", 4: "override", 5: "upgrade" };
+		for (const change of (data.changes ?? [])) {
+			if (typeof change.mode === "number" && !change.type) {
+				change.type = modeMap[change.mode] ?? "add";
+			}
+		}
 		effectMigration.migrateAbilitiesPath(data);
 		effectMigration.migrateResistancesPath(data);
 		return data;
@@ -171,7 +178,7 @@ export default class ActiveEffectT20 extends ActiveEffect {
 		if (change.key.match(/\.\?+\./)) return null;
 		if (change.key.startsWith("flags.tormenta20.")) change = this._prepareFlagChange(actor, change);
 		if (change.key.startsWith("system.attributes.movement") && change.key.match(/(walk|fly|burrow|climb|swim)$/)) {
-			change.key += change.mode == 2 ? ".bonus" : ".base";
+			change.key += (change.type === "add" || change.mode === 2) ? ".bonus" : ".base";
 		}
 		const wildcardPatterns = [
 			"system.atributos.*.value",

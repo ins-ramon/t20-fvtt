@@ -8,31 +8,6 @@ export const effectMigration = {};
 
 /*  */
 
-export const commitMigration = function () {
-	let actorUpdates = foundry.utils.diffObject(game.data.actors, game.actors._source);
-	if (!foundry.utils.isEmpty(actorUpdates)) {
-		console.log("ACTOR", actorUpdates);
-	}
-
-	let itemUpdates = foundry.utils.diffObject(game.data.items, game.items._source);
-	if (!foundry.utils.isEmpty(itemUpdates)) {
-		console.log("ITEM", itemUpdates);
-	}
-
-	let sceneUpdates = foundry.utils.diffObject(game.data.scenes, game.scenes._source);
-	if (!foundry.utils.isEmpty(sceneUpdates)) {
-		console.log("SCENE", sceneUpdates);
-	}
-
-	if (false) {
-		// Differences in item data due to applied data migrations
-		// foundry.utils.diffObject(game.data.items, game.items._source);
-		// Actor.updateDocuments(game.items._source, {diff: false, recursive: false, noHook: true});
-		// Item.updateDocuments(game.items._source, {diff: false, recursive: false, noHook: true});
-		// Scene.updateDocuments(game.items._source, {diff: false, recursive: false, noHook: true});
-	}
-};
-
 /* ---------------------------------------------------- */
 /* ----------------- Tormenta20  JdA ------------------ */
 /* ---------------------------------------------------- */

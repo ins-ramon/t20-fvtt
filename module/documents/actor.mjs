@@ -49,7 +49,7 @@ export default class ActorT20 extends Actor {
 				for (let ch of ef.changes) {
 					if ([3, 4].includes(ch.value)) continue;
 					if (!acc[ch.key]) acc[ch.key] = [];
-					acc[ch.key].push({ label: ef.name, value: ch.value, mode: ch.mode });
+					acc[ch.key].push({ label: ef.name, value: ch.value, mode: ch.mode, type: ch.type });
 				}
 			}
 			return acc;

@@ -14,7 +14,7 @@ T20Conditions.abalado = {
 			category: "medo"
 		}
 	},
-	changes: [{ key: "system.pericias.*.condi", mode: 3, value: -2 }]
+	changes: [{ key: "system.pericias.*.condi", type: "downgrade", value: -2 }]
 };
 
 T20Conditions.agarrado = {
@@ -31,8 +31,8 @@ T20Conditions.agarrado = {
 		}
 	},
 	changes: [
-		{ key: "system.pericias.luta.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.pont.condi", mode: 3, value: -2 }
+		{ key: "system.pericias.luta.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.pont.condi", type: "downgrade", value: -2 }
 	]
 };
 
@@ -45,7 +45,7 @@ T20Conditions.alquebrado = {
 	flags: {
 		tormenta20: { condition: true, durationScene: true, category: "mental" }
 	},
-	changes: [{ key: "system.modificadores.custoPM", mode: 2, value: 1 }]
+	changes: [{ key: "system.modificadores.custoPM", type: "add", value: 1 }]
 };
 
 T20Conditions.apavorado = {
@@ -57,7 +57,7 @@ T20Conditions.apavorado = {
 	flags: {
 		tormenta20: { condition: true, durationScene: true, category: "medo" }
 	},
-	changes: [{ key: "system.pericias.*.condi", mode: 3, value: -5 }]
+	changes: [{ key: "system.pericias.*.condi", type: "downgrade", value: -5 }]
 };
 
 T20Conditions.atordoado = {
@@ -84,9 +84,9 @@ T20Conditions.caido = {
 	icon: "systems/tormenta20/icons/conditions/caido.svg",
 	flags: { tormenta20: { condition: true } },
 	changes: [
-		{ key: "system.pericias.luta.condi", mode: 3, value: -5 },
-		{ key: "system.attributes.defesa.outros", mode: 3, value: -5 },
-		{ key: "system.attributes.movement.*.base", mode: 3, value: 1.5 }
+		{ key: "system.pericias.luta.condi", type: "downgrade", value: -5 },
+		{ key: "system.attributes.defesa.outros", type: "downgrade", value: -5 },
+		{ key: "system.attributes.movement.*.base", type: "downgrade", value: 1.5 }
 	]
 };
 
@@ -105,15 +105,15 @@ T20Conditions.cego = {
 		}
 	},
 	changes: [
-		{ key: "system.pericias.acro.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.atle.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.cava.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.furt.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.inic.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.luta.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.pilo.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.pont.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.refl.condi", mode: 3, value: -5 }
+		{ key: "system.pericias.acro.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.atle.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.cava.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.furt.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.inic.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.luta.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.pilo.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.pont.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.refl.condi", type: "downgrade", value: -5 }
 	]
 };
 
@@ -138,19 +138,19 @@ T20Conditions.debilitado = {
 		tormenta20: { condition: true, durationScene: true, stack: "inconsciente" }
 	},
 	changes: [
-		{ key: "system.modificadores.atributos.for", mode: 2, value: -5 },
-		{ key: "system.modificadores.atributos.des", mode: 2, value: -5 },
-		{ key: "system.modificadores.atributos.con", mode: 2, value: -5 },
-		{ key: "system.pericias.acro.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.atle.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.cava.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.fort.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.furt.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.inic.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.luta.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.pilo.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.pont.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.refl.condi", mode: 3, value: -5 }
+		{ key: "system.modificadores.atributos.for", type: "add", value: -5 },
+		{ key: "system.modificadores.atributos.des", type: "add", value: -5 },
+		{ key: "system.modificadores.atributos.con", type: "add", value: -5 },
+		{ key: "system.pericias.acro.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.atle.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.cava.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.fort.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.furt.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.inic.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.luta.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.pilo.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.pont.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.refl.condi", type: "downgrade", value: -5 }
 	]
 };
 
@@ -162,8 +162,8 @@ T20Conditions.desprevenido = {
 	icon: "systems/tormenta20/icons/conditions/desprevenido.svg",
 	flags: { tormenta20: { condition: true, durationScene: true } },
 	changes: [
-		{ key: "system.pericias.refl.condi", mode: 3, value: -5 },
-		{ key: "system.attributes.defesa.condi", mode: 3, value: -5 }
+		{ key: "system.pericias.refl.condi", type: "downgrade", value: -5 },
+		{ key: "system.attributes.defesa.condi", type: "downgrade", value: -5 }
 	]
 };
 
@@ -189,7 +189,7 @@ T20Conditions.emchamas = {
 	statuses: ["emchamas"],
 	icon: "systems/tormenta20/icons/conditions/em-chamas.svg",
 	flags: { tormenta20: { condition: true, durationScene: true } },
-	changes: [{ key: "dano", mode: 0, value: "1d6[fogo]" }]
+	changes: [{ key: "dano", type: "custom", value: "1d6[fogo]" }]
 };
 
 T20Conditions.enfeiticado = {
@@ -233,8 +233,8 @@ T20Conditions.enredado = {
 		}
 	},
 	changes: [
-		{ key: "system.pericias.luta.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.pont.condi", mode: 3, value: -2 }
+		{ key: "system.pericias.luta.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.pont.condi", type: "downgrade", value: -2 }
 	]
 };
 
@@ -259,27 +259,27 @@ T20Conditions.esmorecido = {
 		tormenta20: { condition: true, durationScene: true, category: "mental" }
 	},
 	changes: [
-		{ key: "system.modificadores.atributos.int", mode: 2, value: -5 },
-		{ key: "system.modificadores.atributos.sab", mode: 2, value: -5 },
-		{ key: "system.modificadores.atributos.car", mode: 2, value: -5 },
-		{ key: "system.pericias.ades.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.atua.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.conh.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.cura.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.dipl.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.enga.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.guer.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.inti.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.intu.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.inve.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.joga.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.mist.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.nobr.condi", mode: 3, value: -5 },
+		{ key: "system.modificadores.atributos.int", type: "add", value: -5 },
+		{ key: "system.modificadores.atributos.sab", type: "add", value: -5 },
+		{ key: "system.modificadores.atributos.car", type: "add", value: -5 },
+		{ key: "system.pericias.ades.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.atua.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.conh.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.cura.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.dipl.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.enga.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.guer.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.inti.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.intu.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.inve.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.joga.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.mist.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.nobr.condi", type: "downgrade", value: -5 },
 		// {key: "system.pericias.ofic.condi", mode:3, value:-5},
-		{ key: "system.pericias.perc.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.reli.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.sobr.condi", mode: 3, value: -5 },
-		{ key: "system.pericias.vont.condi", mode: 3, value: -5 }
+		{ key: "system.pericias.perc.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.reli.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.sobr.condi", type: "downgrade", value: -5 },
+		{ key: "system.pericias.vont.condi", type: "downgrade", value: -5 }
 	]
 };
 
@@ -309,7 +309,7 @@ T20Conditions.fascinado = {
 	flags: {
 		tormenta20: { condition: true, durationScene: true, category: "mental" }
 	},
-	changes: [{ key: "system.pericias.perc.condi", mode: 3, value: -5 }]
+	changes: [{ key: "system.pericias.perc.condi", type: "downgrade", value: -5 }]
 };
 
 T20Conditions.fatigado = {
@@ -339,19 +339,19 @@ T20Conditions.fraco = {
 		tormenta20: { condition: true, durationScene: true, stack: "debilitado" }
 	},
 	changes: [
-		{ key: "system.modificadores.atributos.for", mode: 2, value: -2 },
-		{ key: "system.modificadores.atributos.des", mode: 2, value: -2 },
-		{ key: "system.modificadores.atributos.con", mode: 2, value: -2 },
-		{ key: "system.pericias.acro.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.atle.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.cava.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.fort.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.furt.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.inic.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.luta.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.pilo.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.pont.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.refl.condi", mode: 3, value: -2 }
+		{ key: "system.modificadores.atributos.for", type: "add", value: -2 },
+		{ key: "system.modificadores.atributos.des", type: "add", value: -2 },
+		{ key: "system.modificadores.atributos.con", type: "add", value: -2 },
+		{ key: "system.pericias.acro.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.atle.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.cava.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.fort.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.furt.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.inic.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.luta.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.pilo.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.pont.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.refl.condi", type: "downgrade", value: -2 }
 	]
 };
 
@@ -370,27 +370,27 @@ T20Conditions.frustrado = {
 		}
 	},
 	changes: [
-		{ key: "system.modificadores.atributos.int", mode: 2, value: -2 },
-		{ key: "system.modificadores.atributos.sab", mode: 2, value: -2 },
-		{ key: "system.modificadores.atributos.car", mode: 2, value: -2 },
-		{ key: "system.pericias.ades.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.atua.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.conh.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.cura.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.dipl.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.enga.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.guer.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.inti.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.intu.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.inve.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.joga.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.mist.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.nobr.condi", mode: 3, value: -2 },
+		{ key: "system.modificadores.atributos.int", type: "add", value: -2 },
+		{ key: "system.modificadores.atributos.sab", type: "add", value: -2 },
+		{ key: "system.modificadores.atributos.car", type: "add", value: -2 },
+		{ key: "system.pericias.ades.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.atua.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.conh.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.cura.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.dipl.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.enga.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.guer.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.inti.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.intu.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.inve.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.joga.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.mist.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.nobr.condi", type: "downgrade", value: -2 },
 		// {key: "system.pericias.ofic.condi", mode:3, value:-2},
-		{ key: "system.pericias.perc.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.reli.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.sobr.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.vont.condi", mode: 3, value: -2 }
+		{ key: "system.pericias.perc.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.reli.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.sobr.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.vont.condi", type: "downgrade", value: -2 }
 	]
 };
 
@@ -404,11 +404,11 @@ T20Conditions.imovel = {
 		tormenta20: { condition: true, durationScene: true, category: "movimento" }
 	},
 	changes: [
-		{ key: "system.attributes.movement.walk.base", mode: 3, value: 0 },
-		{ key: "system.attributes.movement.burrow.base", mode: 3, value: 0 },
-		{ key: "system.attributes.movement.climb.base", mode: 3, value: 0 },
-		{ key: "system.attributes.movement.fly.base", mode: 3, value: 0 },
-		{ key: "system.attributes.movement.swim.base", mode: 3, value: 0 }
+		{ key: "system.attributes.movement.walk.base", type: "downgrade", value: 0 },
+		{ key: "system.attributes.movement.burrow.base", type: "downgrade", value: 0 },
+		{ key: "system.attributes.movement.climb.base", type: "downgrade", value: 0 },
+		{ key: "system.attributes.movement.fly.base", type: "downgrade", value: 0 },
+		{ key: "system.attributes.movement.swim.base", type: "downgrade", value: 0 }
 	]
 };
 
@@ -440,7 +440,7 @@ T20Conditions.indefeso = {
 			childEffect: ["desprevenido"]
 		}
 	},
-	changes: [{ key: "system.attributes.defesa.condi", mode: 3, value: -10 }]
+	changes: [{ key: "system.attributes.defesa.condi", type: "downgrade", value: -10 }]
 };
 
 T20Conditions.invisivel = {
@@ -482,9 +482,9 @@ T20Conditions.ofuscado = {
 		tormenta20: { condition: true, durationScene: true, category: "sentidos" }
 	},
 	changes: [
-		{ key: "system.pericias.perc.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.luta.condi", mode: 3, value: -2 },
-		{ key: "system.pericias.pont.condi", mode: 3, value: -2 }
+		{ key: "system.pericias.perc.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.luta.condi", type: "downgrade", value: -2 },
+		{ key: "system.pericias.pont.condi", type: "downgrade", value: -2 }
 	]
 };
 
@@ -529,7 +529,7 @@ T20Conditions.petrificado = {
 			category: "metamorfose"
 		}
 	},
-	changes: [{ key: "system.tracos.resistencias.dano.value", mode: 3, value: 8 }]
+	changes: [{ key: "system.tracos.resistencias.dano.value", type: "downgrade", value: 8 }]
 };
 
 T20Conditions.sangrando = {
@@ -545,7 +545,7 @@ T20Conditions.sangrando = {
 			category: "metabolismo"
 		}
 	},
-	changes: [{ key: "dano", mode: 0, value: "1d6[perda]" }]
+	changes: [{ key: "dano", type: "custom", value: "1d6[perda]" }]
 };
 
 T20Conditions.sustentando = {
@@ -555,7 +555,7 @@ T20Conditions.sustentando = {
 	statuses: ["sustentando"],
 	icon: "systems/tormenta20/icons/conditions/sustentando.svg",
 	flags: { tormenta20: { condition: true, durationScene: true } },
-	changes: [{ key: "sustentado", mode: 0, value: "" }]
+	changes: [{ key: "sustentado", type: "custom", value: "" }]
 };
 
 T20Conditions.surdo = {
@@ -567,7 +567,7 @@ T20Conditions.surdo = {
 	flags: {
 		tormenta20: { condition: true, durationScene: true, category: "sentidos" }
 	},
-	changes: [{ key: "system.pericias.inic.condi", mode: 3, value: -5 }]
+	changes: [{ key: "system.pericias.inic.condi", type: "downgrade", value: -5 }]
 };
 
 T20Conditions.surpreendido = {
@@ -592,7 +592,7 @@ T20Conditions.vulneravel = {
 	statuses: ["vulneravel"],
 	icon: "systems/tormenta20/icons/conditions/vulneravel.svg",
 	flags: { tormenta20: { condition: true, durationScene: true } },
-	changes: [{ key: "system.attributes.defesa.condi", mode: 3, value: -2 }]
+	changes: [{ key: "system.attributes.defesa.condi", type: "downgrade", value: -2 }]
 };
 
 T20Conditions.sobrecarregado = {
@@ -605,7 +605,7 @@ T20Conditions.sobrecarregado = {
 		tormenta20: { condition: true, durationScene: true, category: "movimento" }
 	},
 	changes: [
-		{ key: "system.attributes.defesa.pda", mode: 2, value: 5 }
-		// { key: "system.attributes.movement.*.bonus", mode: 2, value: -3 }
+		{ key: "system.attributes.defesa.pda", type: "add", value: 5 }
+		// { key: "system.attributes.movement.*.bonus", type: "add", value: -3 }
 	]
 };
