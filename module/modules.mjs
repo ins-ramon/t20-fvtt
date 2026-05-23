@@ -45,7 +45,7 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
 			];
 		}
 	}
-	dragRuler.registerSystem("tormenta20", Tormenta20SpeedProvider);
+	dragRuler.registerSystem("t20-ramon", Tormenta20SpeedProvider);
 });
 
 // Module: Item Piles
